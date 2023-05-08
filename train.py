@@ -1,5 +1,5 @@
 import torch
-from F107Model import F107Model
+from Model import LSTMModel
 import torch.nn as nn
 import dataloader
 import math
@@ -9,7 +9,7 @@ device = 0
 # 实例化模型
 input_size = 1
 hidden_size = 64
-model = F107Model(input_size, hidden_size).to(device)
+model = LSTMModel(input_size, hidden_size).to(device)
 
 # 定义损失函数和优化器
 criterion = nn.MSELoss()
