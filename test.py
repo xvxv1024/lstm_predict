@@ -1,5 +1,5 @@
 import torch
-from F107Model import F107Model
+from Model import LSTMModel
 import torch.nn as nn
 import dataloader
 import math
