@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 
 
-class F107Model(nn.Module):
+class LSTMModel(nn.Module):
     def __init__(self, input_size=1, hidden_size=64, num_layers=4, output_size=9):
         super().__init__()
         self.hidden_size = hidden_size
